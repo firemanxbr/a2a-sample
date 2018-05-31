@@ -1,0 +1,7 @@
+---
+- hosts: '{{ hosts | default("all") }}'
+  gather_facts: '{{ gather_facts | default("yes") }}'
+
+  tasks:
+    - name: "Sample of playbook"
+      command: uptime
